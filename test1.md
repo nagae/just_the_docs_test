@@ -47,6 +47,8 @@ interesting integral:
 \end{equation}
 
 ## 自作マクロ
+$\bold{math}$
+
 $\phantom{}$$
 \newcommand\nr{\notag\\\\}%タグなし改行用
 \newcommand\ret{\notag\\\\&\qquad}%数式改行用
