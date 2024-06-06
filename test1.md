@@ -47,10 +47,12 @@ interesting integral:
 \end{equation}
 
 ## 自作マクロ
-$\RR$
-$\ddx[f]{x}$
-$\abc$
-$\bold{math}$
+$\RR$, 
+$\ddx[f]{x}$, 
+$\abc$, 
+$\bold{math}$, 
+$\Cl{R}$,
+$\Vt{x}$
 
 $\phantom{}$$
 \newcommand\nr{\notag\\\\}%タグなし改行用
