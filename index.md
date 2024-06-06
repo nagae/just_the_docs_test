@@ -1,6 +1,7 @@
 ---
 title: Home
 layout: home
+has_children: true
 ---
 
 [テスト1](docs/test1.md)
