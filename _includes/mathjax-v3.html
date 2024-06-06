@@ -8,7 +8,11 @@
           color: [],
           colorV2: ['color']
         },
-        packages: {'[+]': ['noerrors']}
+        packages: {'[+]': ['noerrors']},
+        macros:{
+            Vt: ["{\\boldsymbol{#1}", 1],
+            Cl: ["{\\mathcal{#1}", 1]
+        }
       },
       chtml: {
         matchFontHeight: false,
