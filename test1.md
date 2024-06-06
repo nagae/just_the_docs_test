@@ -1,3 +1,8 @@
+---
+title: test1
+layout: home
+---
+
 # Converted from Markdown file
 test
 ## From demo
