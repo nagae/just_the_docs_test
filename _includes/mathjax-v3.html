@@ -1,7 +1,7 @@
 <script>
     MathJax = {
-     loader: {load: ['[tex]/newcommand']},
-      tex: {
+    loader: {load: ['[tex]/newcommand']},
+    tex: {
         inlineMath: [['$','$'], ['\\(','\\)']],
         processEscapes: true,
         tags: "ams",
@@ -12,12 +12,10 @@
         packages: {'[+]': ['noerrors']},
         packages: {'[+]': ['newcommand']},
         macros: {
-            bold: ['{\bf #1}',1],
-            ddfrac: ['{\frac{\displaystyle #1}{\displaystyle #2}}', 2],
-            abs: ['\left\lvert #2 \right\rvert_{\text{#1}}', 2, ""],
-            floor: ['\left\lfloor #2 \right\rfloor_{\text{#1}}', 2, ""],
-            sfrac: ['{ \frac {\ #1 \ }{#2}}', 2],
-            lcm: ['\operatorname{lcm}#1', 1]
+          RR: '{\\bf R}',                    // a simple string replacement
+          bold: ['\\boldsymbol{#1}',1] ,     // this macro has one parameter
+          ddx: ['\\frac{d#2}{d#1}', 2, 'x'], // this macro has an optional parameter that defaults to 'x'
+          abc: ['(#1)', 1, [null, '\\cba']]  // equivalent to \def\abc#1\cba{(#1)}
         }
       },
       chtml: {
