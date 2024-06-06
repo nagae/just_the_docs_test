@@ -47,8 +47,38 @@ interesting integral:
 \end{equation}
 
 ## 自作マクロ
-\(
-   \def\RR{{\bf R}}
-   \def\bold#1{{\bf #1}}
-\)
-$\RR, \bold{math}$
+$\phantom{}$$
+\newcommand\nr{\notag\\\\}%タグなし改行用
+\newcommand\ret{\notag\\\\&\qquad}%数式改行用
+\newcommand\I{\mathrm{i}}
+\newcommand\D{\mathrm{d}}
+\newcommand\E{\mathrm{e}}
+\newcommand\hc{\mathrm{h.c.}}
+\newcommand\cc{\mathrm{c.c.}}
+\newcommand\O[1]{\mathscr{O}\left(#1\right)}
+\newcommand\abs[1]{{\left\rvert #1 \right\lvert}}
+\newcommand\Res{\mathop{\mathrm{Res}}}
+\newcommand\bra[1]{\mathinner{\langle{#1}|}}
+\newcommand\ket[1]{\mathinner{|{#1}\rangle}}
+\newcommand\braket[1]{\mathinner{\langle{#1}\rangle}}
+\newcommand\Bra[1]{\left\langle#1\right|}
+\newcommand\Ket[1]{\left|#1\right\rangle}
+\newcommand\Braket[1]{\left\langle #1 \right\rangle}
+\newcommand\|{\middle|}%\Braket用
+\DeclareMathOperator{\Log}{Log}
+\DeclareMathOperator{\Arg}{Arg}
+\DeclareMathOperator{\sgn}{sgn}
+\DeclareMathOperator{\Tr}{Tr}
+\newcommand\dashint{\mathchoice
+  {\int\kern-10pt-}
+  {\int\kern-8.5pt-}
+  {\int\kern-6.1pt-}
+  {\int\kern-4.58pt-}}
+\newcommand\set[1]{\left\\{#1\right\\}}
+\newcommand\for[1]{\quad\mathrm{for}\quad #1}
+\newcommand\LHS{\mathrm{(LHS)}}
+\newcommand\RHS{\mathrm{(RHS)}}
+$
+$$
+\dashint \D x \frac{\E^{\I a x}}{x} = \I \pi \sgn(a) \for{a\in\mathbb{R}},
+$$
