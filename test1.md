@@ -1,7 +1,7 @@
 ---
 title: test1
 layout: default
-parent: index
+parent: Home
 ---
 
 # Converted from Markdown file
