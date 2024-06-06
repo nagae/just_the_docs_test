@@ -1,6 +1,6 @@
 ---
 title: test1
-layout: home
+layout: ほげ
 ---
 
 # Converted from Markdown file
