@@ -47,4 +47,8 @@ interesting integral:
 \end{equation}
 
 ## 自作マクロ
+\(
+\newcommand{\Vt}[1]{\boldsymbol{#1}}
+\newcommand{\Cl}[1]{\mathcal{#1}}
+\)
 $\Vt{t}, \Cl{R}$
