@@ -36,3 +36,12 @@ test: $$N = \sum_{n=1}^r x_n$$
 
 <p><script type="math/tex">ax+by+c=0</script></p>
 <script type="math/tex; mode=display">\sum_{i=1}^n x_i</script>
+
+## 数式番号
+In equation \eqref{eq:sample}, we find the value of an
+interesting integral:
+
+\begin{equation}
+  \int_0^\infty \frac{x^3}{e^x-1}\,dx = \frac{\pi^4}{15}
+  \label{eq:sample}
+\end{equation}
