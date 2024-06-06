@@ -48,7 +48,7 @@ interesting integral:
 
 ## 自作マクロ
 \(
-\newcommand{\Vt}[1]{\boldsymbol{#1}}
-\newcommand{\Cl}[1]{\mathcal{#1}}
+   \def\RR{{\bf R}}
+   \def\bold#1{{\bf #1}}
 \)
-$\Vt{t}, \Cl{R}$
+$\RR, \bold{math}$
