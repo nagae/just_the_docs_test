@@ -1,6 +1,7 @@
 ---
 title: test1
-layout: ほげ
+layout: default
+parent: index
 ---
 
 # Converted from Markdown file
