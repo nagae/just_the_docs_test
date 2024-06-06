@@ -47,6 +47,9 @@ interesting integral:
 \end{equation}
 
 ## 自作マクロ
+$\RR$
+$\ddx[f]{x}$
+$\abc$
 $\bold{math}$
 
 $\phantom{}$$
