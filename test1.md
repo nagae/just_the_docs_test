@@ -66,13 +66,30 @@ $\PDNF{f(x)}{x}{2}$,
 \Vtz,
 \end{equation}
 \begin{equation}
-\VtA, \VtB, \VtC, \VtD, \VtE,
-\VtF, \VtG, \VtH, \VtI, \VtJ,
-\VtK, \VtL, \VtM, \VtN, \VtO,
-\VtP, \VtQ, \VtR, \VtS, \VtT,
-\VtU, \VtV, \VtW, \VtX, \VtY,
-\VtZ,
+\HtA, \HtB, \HtC, \HtD, \HtE,
+\HtF, \HtG, \HtH, \HtI, \HtJ,
+\HtK, \HtL, \HtM, \HtN, \HtO,
+\HtP, \HtQ, \HtR, \HtS, \HtT,
+\HtU, \HtV, \HtW, \HtX, \HtY,
+\HtZ,
 \end{equation}
+\begin{equation}
+\Hta, \Htb, \Htc, \Htd, \Hte,
+\Htf, \Htg, \Hth, \Hti, \Htj,
+\Htk, \Htl, \Htm, \Htn, \Hto,
+\Htp, \Htq, \Htr, \Hts, \Htt,
+\Htu, \Htv, \Htw, \Htx, \Hty,
+\Htz,
+\end{equation}
+\begin{equation}
+\HtA, \HtB, \HtC, \HtD, \HtE,
+\HtF, \HtG, \HtH, \HtI, \HtJ,
+\HtK, \HtL, \HtM, \HtN, \HtO,
+\HtP, \HtQ, \HtR, \HtS, \HtT,
+\HtU, \HtV, \HtW, \HtX, \HtY,
+\HtZ,
+\end{equation}
+
 \begin{equation}
 \ClA, \ClB, \ClC, \ClD, \ClE,
 \ClF, \ClG, \ClH, \ClI, \ClJ,
