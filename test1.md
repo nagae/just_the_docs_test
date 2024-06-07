@@ -54,9 +54,9 @@ $\bold{math}$,
 $\Cl{R}$,
 $\Vt{x}$,
 $\int \pi(t) \Id t$,
-$\PDF{f(x)}{x}$,
-$\ODF{f(x)}{x}$,
-$\PDDF{f(x,y)}{x}{y}$, 
+#$\PDF{f(x)}{x}$,
+#$\ODF{f(x)}{x}$,
+#$\PDDF{f(x,y)}{x}{y}$, 
 
 $\phantom{}$$
 \newcommand\nr{\notag\\\\}%タグなし改行用
