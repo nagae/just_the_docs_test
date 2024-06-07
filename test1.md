@@ -54,6 +54,14 @@ $\EXP{\eta f(\Vt{x})}$
 $\PDF{f(x)}{x}$,
 $\ODF{f(x)}{x}$,
 $\PDDF{f(x,y)}{x}{y}$, 
+\begin{equation}
+\Vta, \Vtb, \Vtc, \Vtd, \Vte,
+\Vtf, \Vtg, \Vth, \Vti, \Vtj,
+\Vtk, \Vtl, \Vtm, \Vtn, \Vto,
+\Vtp, \Vtq, \Vtr, \Vts, \Vtt,
+\Vtu, \Vtv, \Vtw, \Vtx, \Vty,
+\Vtz,
+\end{equation}
 
 $\phantom{}$$
 \newcommand\nr{\notag\\\\}%タグなし改行用
