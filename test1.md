@@ -50,11 +50,7 @@ interesting integral:
 $\Cl{R}$,
 $\Vt{x}$,
 $\int \pi(t) \Id t$,
-
-$\RR$, 
-$\ddx[f]{x}$, 
-$\abc$, 
-$\bold{math}$, 
+$\EXP{\eta f(\Vtx)}$
 #$\PDF{f(x)}{x}$,
 #$\ODF{f(x)}{x}$,
 #$\PDDF{f(x,y)}{x}{y}$, 
