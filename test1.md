@@ -54,8 +54,8 @@ $\bold{math}$,
 $\Cl{R}$,
 $\Vt{x}$,
 $\int \pi(t) \Id t$,
-$\ODF{f(x)}{x}$
-$\PDF{f(x)}{x}$
+$\PDF{f(x)}{x}$,
+$\ODF{f(x)}{x}$,
 $\PDDF{f(x,y)}{x}{y}$
 
 $\phantom{}$$
