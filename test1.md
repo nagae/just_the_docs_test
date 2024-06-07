@@ -70,6 +70,14 @@ $\PDDF{f(x,y)}{x}{y}$,
 \VtU, \VtV, \VtW, \VtX, \VtY,
 \VtZ,
 \end{equation}
+\begin{equation}
+\ClA, \ClB, \ClC, \ClD, \ClE,
+\ClF, \ClG, \ClH, \ClI, \ClJ,
+\ClK, \ClL, \ClM, \ClN, \ClO,
+\ClP, \ClQ, \ClR, \ClS, \ClT,
+\ClU, \ClV, \ClW, \ClX, \ClY,
+\ClZ,
+\end{equation}
 
 $\phantom{}$$
 \newcommand\nr{\notag\\\\}%タグなし改行用
