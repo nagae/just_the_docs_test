@@ -52,7 +52,10 @@ $\ddx[f]{x}$,
 $\abc$, 
 $\bold{math}$, 
 $\Cl{R}$,
-$\Vt{x}$
+$\Vt{x}$,
+$\int \pi(t) \Id t$
+$\PDF{f(x)}{x}$
+$\PDDF{f(x,y)}{x}{y}$
 
 $\phantom{}$$
 \newcommand\nr{\notag\\\\}%タグなし改行用
