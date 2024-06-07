@@ -47,13 +47,14 @@ interesting integral:
 \end{equation}
 
 ## 自作マクロ
+$\Cl{R}$,
+$\Vt{x}$,
+$\int \pi(t) \Id t$,
+
 $\RR$, 
 $\ddx[f]{x}$, 
 $\abc$, 
 $\bold{math}$, 
-$\Cl{R}$,
-$\Vt{x}$,
-$\int \pi(t) \Id t$,
 #$\PDF{f(x)}{x}$,
 #$\ODF{f(x)}{x}$,
 #$\PDDF{f(x,y)}{x}{y}$, 
