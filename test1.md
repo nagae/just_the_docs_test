@@ -50,10 +50,10 @@ interesting integral:
 $\Cl{R}$,
 $\Vt{x}$,
 $\int \pi(t) \Id t$,
-$\EXP{\eta f(\Vtx)}$
-#$\PDF{f(x)}{x}$,
-#$\ODF{f(x)}{x}$,
-#$\PDDF{f(x,y)}{x}{y}$, 
+$\EXP{\eta f(\Vt{x})}$
+$\PDF{f(x)}{x}$,
+$\ODF{f(x)}{x}$,
+$\PDDF{f(x,y)}{x}{y}$, 
 
 $\phantom{}$$
 \newcommand\nr{\notag\\\\}%タグなし改行用
