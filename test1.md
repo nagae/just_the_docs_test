@@ -53,7 +53,7 @@ $\abc$,
 $\bold{math}$, 
 $\Cl{R}$,
 $\Vt{x}$,
-$\int \pi(t) \Id t$
+$\int \pi(t) \Id t$,
 $\PDF{f(x)}{x}$
 $\PDDF{f(x,y)}{x}{y}$
 
