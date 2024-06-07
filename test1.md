@@ -62,6 +62,14 @@ $\PDDF{f(x,y)}{x}{y}$,
 \Vtu, \Vtv, \Vtw, \Vtx, \Vty,
 \Vtz,
 \end{equation}
+\begin{equation}
+\VtA, \VtB, \VtC, \VtD, \VtE,
+\VtF, \VtG, \VtH, \VtI, \VtJ,
+\VtK, \VtL, \VtM, \VtN, \VtO,
+\VtP, \VtQ, \VtR, \VtS, \VtT,
+\VtU, \VtV, \VtW, \VtX, \VtY,
+\VtZ,
+\end{equation}
 
 $\phantom{}$$
 \newcommand\nr{\notag\\\\}%タグなし改行用
