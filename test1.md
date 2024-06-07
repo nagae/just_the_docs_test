@@ -51,9 +51,12 @@ $\Cl{R}$,
 $\Vt{x}$,
 $\int \pi(t) \Id t$,
 $\EXP{\eta f(\Vt{x})}$
-$\PDF{f(x)}{x}$,
 $\ODF{f(x)}{x}$,
+$\ODNF{f(x)}{x}{2}$,
+$\PDF{f(x)}{x}$,
 $\PDDF{f(x,y)}{x}{y}$, 
+$\PDNF{f(x)}{x}{2}$, 
+
 \begin{equation}
 \Vta, \Vtb, \Vtc, \Vtd, \Vte,
 \Vtf, \Vtg, \Vth, \Vti, \Vtj,
@@ -77,6 +80,14 @@ $\PDDF{f(x,y)}{x}{y}$,
 \ClP, \ClQ, \ClR, \ClS, \ClT,
 \ClU, \ClV, \ClW, \ClX, \ClY,
 \ClZ,
+\end{equation}
+\begin{equation}
+\BbA, \BbB, \BbC, \BbD, \BbE,
+\BbF, \BbG, \BbH, \BbI, \BbJ,
+\BbK, \BbL, \BbM, \BbN, \BbO,
+\BbP, \BbQ, \BbR, \BbS, \BbT,
+\BbU, \BbV, \BbW, \BbX, \BbY,
+\BbZ,
 \end{equation}
 
 $\phantom{}$$
