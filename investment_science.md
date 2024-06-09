@@ -72,6 +72,7 @@ S(t) &= \sum_{t=0}^{T} \beta^{t} f(t) \Delta t\\
 $$
 
 ### 練習問題
+
 {: .warning}
 あとで考える
 
