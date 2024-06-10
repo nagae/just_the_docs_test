@@ -144,7 +144,7 @@ V(t) = \sum_{s=t}^{19} \beta^{(s-t)} f(s) \Delta t, \qquad s = 11, \cdots, 19
 \end{equation}$$
 と書ける．
 
-以上を整理すると，この事業の時点$t=0, 1, \cdots, 19$における価値は，
+従って，この事業の時点$t=0, 1, \cdots, 19$における価値は，以下のように整理できる：
 $$\begin{equation}
 V(t) = 
 \begin{cases}
