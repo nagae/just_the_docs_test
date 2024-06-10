@@ -149,9 +149,45 @@ $$\begin{equation}
 V(t) = 
 \begin{cases}
 -C_{0} - \beta^{5} C_{1} + \sum_{s=10}^{19} \beta^{s} f(s) \Delta t & t = 0\\
--\beta^{5-t} C_{1}  + \sum_{s=10}^{19} \beta^{(s-t)} f(s) \Delta t & t = 1, \cdots, 5\\
+-\beta^{(5-t)} C_{1}  + \sum_{s=10}^{19} \beta^{(s-t)} f(s) \Delta t & t = 1, \cdots, 5\\
 \sum_{s=10}^{19} \beta^{(s-t)} f(s) \Delta t & t = 6, \cdots, 10\\
 \sum_{s=t}^{19} \beta^{(s-t)} f(s) \Delta t & t = 11, \cdots, 19\\
 \end{cases}
 \end{equation}$$
 
+ここで，$V(18)$と$V(19)$を比較してみよう．
+$$
+\begin{align}
+V(18) &= f(18) \Delta t + \beta f(19) \Delta t\\
+V(19) &= f(19) \Delta t
+\end{align}
+$$
+これより明らかなように，$V(18)$は$V(19)$を用いて以下のように表すことができる．
+$$
+V(18) = f(18) \Delta t + \beta V(19)
+$$
+同様に，$V(17)$と$V(18)$を比較すると
+$$
+\begin{align}
+V(17) &= f(17) \Delta t + \beta f(18) \Delta t + \beta^{2} f(19) \Delta t\\
+&= f(17) \Delta t + \beta \left\{f(18) \Delta t + \beta f(19) \Delta t\right\}\\
+V(18) &= f(18) \Delta t + \beta f(19) \Delta t
+\end{align}
+$$
+であるから，やはり以下のように記述できる：
+$$\begin{equation}
+V(17) = f(17) \Delta t + \beta V(18)
+\end{equation}$$
+実際，$t=19 \sim 11$までは，
+$$\begin{align}
+V(t) &= f(t) \Delta t + \sum_{s=t+1}^{19} \beta^{(s-t)}f(s) \Delta t\\
+&= f(t) \Delta t + \beta \left( 
+    \sum_{s=t+1}^{19} \beta^{(s-(t+1))} f(s) \Delta t 
+    \right)\\
+V(t+1) &=  \sum_{s=t+1}^{19} \beta^{(s-(t+1))} f(s) \Delta t
+\end{align}$$
+であるから，$V(t)$と$V(t+1)$の関係は
+$$\begin{equation}
+V(t) = f(t) \Delta t + \beta V(t+1)
+\end{equation}$$
+と記述できる．
