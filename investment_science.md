@@ -148,8 +148,8 @@ V(t) = \sum_{s=t}^{19} \beta^{(s-t)} f(s) \Delta t, \qquad s = 11, \cdots, 19
 $$\begin{equation}
 V(t) = 
 \begin{cases}
-- C_{0} - \beta^{5} C_{1} + \sum_{s=10}^{19} \beta^{s} f(s) \Delta t & t = 0\\
-- \beta^{5-t} C_{1}  + \sum_{s=10}^{19} \beta^{(s-t)} f(s) \Delta t & t = 1, \cdots, 5\\
+-C_{0} - \beta^{5} C_{1} + \sum_{s=10}^{19} \beta^{s} f(s) \Delta t & t = 0\\
+-\beta^{5-t} C_{1}  + \sum_{s=10}^{19} \beta^{(s-t)} f(s) \Delta t & t = 1, \cdots, 5\\
 \sum_{s=10}^{19} \beta^{(s-t)} f(s) \Delta t & t = 6, \cdots, 10\\
 \sum_{s=t}^{19} \beta^{(s-t)} f(s) \Delta t & t = 11, \cdots, 19\\
 \end{cases}
