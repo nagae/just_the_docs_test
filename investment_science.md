@@ -154,5 +154,3 @@ V(t) =
 \sum_{s=t}^{19} \beta^{(s-t)} f(s) \Delta t & t = 11, \cdots, 19\\
 \end{cases}\end{equation}$$
 
-
-
