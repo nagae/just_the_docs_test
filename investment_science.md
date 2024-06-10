@@ -105,8 +105,9 @@ V(0) = -C_{0} - \beta^{5} C_{1} + \sum_{s=10}^{19} \beta^{s} f(s) \Delta t
 {: .warning}
 あとで考える
 
-# 将来時点での現在正味価値と再帰的構造
-上述した投資事業の，将来時点$t > 0$で評価した現在正味価値を考えてみよう．例えば，$t=1$の場合，初期時点での投資$C_{0}$は既に実行済であるから，残る投資は時点$s=5$における$C_{1}$のみである．この投資の時点$t=1$での価値は，額面$C_{1}$を$s-t=4$期分だけ割引いた
+# 将来時点での現在正味価値と漸化式
+## 将来時点での現在正味価値
+上述した投資事業の，将来時点$t > 0$で評価した現在正味価値（将来時点を「現在」と呼ぶことに違和感があるなら「当時価値」と読み替えてよい）を考えてみよう．例えば，$t=1$の場合，初期時点での投資$C_{0}$は既に実行済であるから，残る投資は時点$s=5$における$C_{1}$のみである．この投資の時点$t=1$での価値は，額面$C_{1}$を$s-t=4$期分だけ割引いた
 $$\begin{equation}
 \beta^{(s-t)} C_{1} = \beta^{(5-1)}C_{1}
 \end{equation}$$ 
@@ -155,18 +156,19 @@ V(t) =
 \end{cases}
 \end{equation}$$
 
-ここで，$V(18)$と$V(19)$を比較してみよう．
+## 現在正味価値が従う漸化式
+プロジェクト価値$\{V(t): t = 0, 1, \cdots, 19\}$について，$V(t)$と$V(t+1)$の間に成立する漸化式を導こう．まず，$V(18)$と$V(19)$は
 $$
 \begin{align}
 V(18) &= f(18) \Delta t + \beta f(19) \Delta t\\
 V(19) &= f(19) \Delta t
 \end{align}
 $$
-これより明らかなように，$V(18)$は$V(19)$を用いて以下のように表すことができる．
+であるから，以下の漸化式が成立する：
 $$
 V(18) = f(18) \Delta t + \beta V(19)
 $$
-同様に，$V(17)$と$V(18)$を比較すると
+同様に，$V(17)$と$V(18)$は
 $$
 \begin{align}
 V(17) &= f(17) \Delta t + \beta f(18) \Delta t + \beta^{2} f(19) \Delta t\\
@@ -174,7 +176,7 @@ V(17) &= f(17) \Delta t + \beta f(18) \Delta t + \beta^{2} f(19) \Delta t\\
 V(18) &= f(18) \Delta t + \beta f(19) \Delta t
 \end{align}
 $$
-であるから，やはり以下のように記述できる：
+であるから，やはり以下の漸化式が成り立つ：
 $$\begin{equation}
 V(17) = f(17) \Delta t + \beta V(18)
 \end{equation}$$
@@ -186,8 +188,64 @@ V(t) &= f(t) \Delta t + \sum_{s=t+1}^{19} \beta^{(s-t)}f(s) \Delta t\\
     \right)\\
 V(t+1) &=  \sum_{s=t+1}^{19} \beta^{(s-(t+1))} f(s) \Delta t
 \end{align}$$
-であるから，$V(t)$と$V(t+1)$の関係は
+であるから，$V(t)$と$V(t+1)$の間に以下の漸化式が成立する：
 $$\begin{equation}
-V(t) = f(t) \Delta t + \beta V(t+1)
+V(t) = f(t) \Delta t + \beta V(t+1), \quad t = 11, \cdots, 18
 \end{equation}$$
-と記述できる．
+
+キャッシュ・フローが発生しない時点$t=9$については，
+$$\begin{align}
+V(9) &= \sum_{s=10}^{19} \beta^{(s-9)} f(s) \Delta t\\
+&= \beta \left( \sum_{s=10}^{19} \beta^{(s-10)} f(s) \Delta t \right)\\
+V(10) &= \sum_{s=10}^{19} \beta^{(s-10)} f(s) \Delta t
+\end{align}$$
+より，以下の漸化式が成り立つ：
+$$\begin{equation}
+V(9) = \beta V(10)
+\end{equation}$$
+$t=8 \sim 6$および$t=4 \sim 1$についても，同様に，
+$$\begin{align}
+V(t) &= \sum_{s=10}^{19} \beta^{(s-t)} f(s) \Delta t\\
+&= \beta \left( \sum_{s=10}^{19} \beta^{(s-(t+1)} f(s) \Delta t \right)
+V(t+1) &= \sum_{s=10}^{19} \beta^{(s-(t+1))} f(s) \Delta t
+\end{align}$$
+より$V(t)$の漸化式が得られる：
+$$\begin{equation}
+V(t) = \beta V(t+1), \qquad t = 1,\cdots,4, 6, \cdots, 8
+\end{equation}$$
+
+
+最後に，投資費用が発生する$t=5$についても漸化式を導いておこう．
+$$\begin{align}
+V(5) &= -C_{1} + \sum_{s=10}^{19} \beta^{(s-5)} f(s) \Delta t\\
+&= -C_{1} + \beta \left( \sum_{s=10}^{19} \beta^{(s-6)} f(s) \Delta t \right)\\
+V(6) &= \sum_{s=10}^{19} \beta^{(s-6)} f(s) \Delta t
+\end{align}$$
+より
+$$\begin{equation}
+V(5) = -C_{1} + \beta V(6)
+\end{equation}$$
+と書ける．同様に，$V(0)$と$V(1)$の間にも以下の関係が成り立つ：
+$$\begin{equation}
+V(0) = -C_{0} + \beta V(1)
+\end{equation}$$
+
+結局のところ，$V(t)$が従う漸化式とその終端条件は，以下のように整理される：
+$$
+\begin{align}
+V(t) &= \begin{cases}
+f(t) \Delta t + \beta V(t+1) & t=10, \cdots, 18\\
+\beta V(t+1) & t = 1, \cdots, 4, 6, \cdots, 9\\
+-C_{1} + \beta V(t+1) & t=5\\
+-C_{t} + \beta V(t+1) & t=0
+\end{cases} \label{eq:recurrence_V}\\
+V(19) &= f(19) \Delta t
+\end{align}
+$$
+
+この漸化式を活用すると，以下のシンプルな手手続きで全ての時点の価値$\{V(t): t = 0, 1, \cdots, 19\}$を求められる．
+- Step 0: $V(19): = f(19) \Delta t$ とし，$t=18$とする．
+- Step 1: 式\eqref{eq:recurence_V}を用いて，既知の$V(t+1)$から$V(t)$を計算する．
+- Step 2: $t=0$なら終了．そうでなければ，$t:=t-1$として Step 1 に戻る．
+
+# 
