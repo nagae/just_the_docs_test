@@ -29,6 +29,11 @@ jobs:
   # Build job
   build:
     runs-on: ubuntu-latest
+    # added 2024/06/11 vvv
+    defaults: 
+      run: 
+        working-directory: docs 
+    # ^^^
     steps:
       - name: Checkout
         uses: actions/checkout@v4
@@ -38,7 +43,8 @@ jobs:
           ruby-version: '3.3' # Not needed with a .ruby-version file
           bundler-cache: true # runs 'bundle install' and caches installed gems automatically
           cache-version: 0 # Increment this number if you need to re-download cached gems
-          working-directory: '${{ github.workspace }}/docs' # added 2024/06/11
+          # added 2024/06/11 vvv
+          working-directory: '${{ github.workspace }}/docs' 
       - name: Setup Pages
         id: pages
         uses: actions/configure-pages@v5
@@ -50,8 +56,10 @@ jobs:
       - name: Upload artifact
         # Automatically uploads an artifact from the './_site' directory by default
         uses: actions/upload-pages-artifact@v3
-        with: # added 2024/06/11
-          path: "docs/_site/" # added 2024/06/11
+        # added 2024/06/11 vvv
+        with: 
+          path: "docs/_site/" 
+        # ^^^
 
   # Deployment job
   deploy:
@@ -59,9 +67,6 @@ jobs:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
     runs-on: ubuntu-latest
-    defaults: # added 2024/06/11
-      run: # added 2024/06/11
-        working-directory: docs # added 2024/06/11
     needs: build
     steps:
       - name: Deploy to GitHub Pages
