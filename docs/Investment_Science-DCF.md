@@ -1,7 +1,7 @@
 ---
-title: Investment_Science_Ch01
+title: 事業価値とキャッシュ・フロー
 layout: default
-parent: Investment_Science
+parent: Investment Science
 ---
 # 事業価値とキャッシュ・フロー
 
