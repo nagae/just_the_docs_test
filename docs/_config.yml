@@ -23,5 +23,8 @@ callouts:
   warning:
     title: Warning
     color: red
+  exercise:
+    title: Exercise
+    color: green
 #aux_links:
 #  Template Repository: https://github.com/just-the-docs/just-the-docs-template
