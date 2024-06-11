@@ -30,9 +30,9 @@ jobs:
   build:
     runs-on: ubuntu-latest
     # added 2024/06/11 vvv
-    #defaults: 
-    #  run: 
-    #    working-directory: docs 
+    defaults: 
+      run: 
+        working-directory: docs 
     # ^^^
     steps:
       - name: Checkout
@@ -44,7 +44,7 @@ jobs:
           bundler-cache: true # runs 'bundle install' and caches installed gems automatically
           cache-version: 0 # Increment this number if you need to re-download cached gems
           # added 2024/06/11 vvv
-          #working-directory: '${{ github.workspace }}/docs' 
+          working-directory: '${{ github.workspace }}/docs' 
       - name: Setup Pages
         id: pages
         uses: actions/configure-pages@v5
@@ -57,8 +57,8 @@ jobs:
         # Automatically uploads an artifact from the './_site' directory by default
         uses: actions/upload-pages-artifact@v3
         # added 2024/06/11 vvv
-        #with: 
-        #  path: "docs/_site/" 
+        with: 
+          path: "docs/_site/" 
         # ^^^
 
   # Deployment job
