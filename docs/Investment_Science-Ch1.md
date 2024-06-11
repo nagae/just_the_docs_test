@@ -2,6 +2,7 @@
 title: 事業価値とキャッシュ・フロー
 layout: default
 parent: Investment Science
+nav_order: 1
 ---
 # 事業価値とキャッシュ・フロー
 
